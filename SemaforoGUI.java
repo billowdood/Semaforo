@@ -72,10 +72,10 @@ public class SemaforoGUI{
 		labels[7].setBackground(colores[2]);
 
 		//Numero de carros
-		labels[8].setText("Carros: 100");
-		labels[9].setText("Carros: 100");
-		labels[10].setText("Carros: 100");
-		labels[11].setText("Carros: 100");
+		//labels[8].setText("Carros: 100");
+		//labels[9].setText("Carros: 100");
+		//labels[10].setText("Carros: labels");
+		//100[11].setText("Carros: 100");
 	}
 
 	public void setColorSemaforo(int semaforo,int color){

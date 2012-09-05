@@ -49,6 +49,7 @@ public class Carril{
 	return prioridad;
     }
     
+    //??
     public int getOutCar(){
 	return outCar;
     }

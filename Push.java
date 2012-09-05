@@ -33,16 +33,16 @@ public class Push extends Thread{
 		elegirCarril = random.nextInt(10000) % 5;
 		//Si es el que carril con mas afluencia,de o a 10 carros
 		if(carriles[elegirCarril].getPrioridad()){
-		    carriles[elegirCarril].setNumVehiculos(carriles[elegirCarril].getNumVehiculos() + random.nextInt(10000) % 11);
+		    carriles[elegirCarril].setNumVehiculos(carriles[elegirCarril].getNumVehiculos() + random.nextInt(10000) % 5);
 		    gui.setText(elegirCarril,carriles[elegirCarril].getNumVehiculos());
 		}
 		//si no,de 0 a 5 carros
 		else{
-		    carriles[elegirCarril].setNumVehiculos(carriles[elegirCarril].getNumVehiculos() + random.nextInt(10000) % 6);
+		    carriles[elegirCarril].setNumVehiculos(carriles[elegirCarril].getNumVehiculos() + random.nextInt(10000) % 2);
 		    gui.setText(elegirCarril,carriles[elegirCarril].getNumVehiculos());
 		}
 		//Cada 5 segundos llegan vehiculos a algun carril
-		sleep(5000);
+		sleep(2000);
 	    }catch(Exception e){
 		System.out.println("Exception"+e.getMessage());
 	    }
